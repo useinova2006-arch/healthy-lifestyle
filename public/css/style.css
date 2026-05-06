@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f0f7f4;
+    color: #2d3436;
+}
+
+/* HEADER */
+header {
+    background: #2d6a4f;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    background: #40916c;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #d8f3dc;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #1b4332;
+}
+
+/* NEWS */
+.news-card {
+    background: #f8fdf9;
+    border-left: 5px solid #52b788;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+/* BUTTON */
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FORM */
+input, textarea, button {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 📱 TABLET */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .news-card {
+        font-size: 14px;
+    }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+    }
+}
